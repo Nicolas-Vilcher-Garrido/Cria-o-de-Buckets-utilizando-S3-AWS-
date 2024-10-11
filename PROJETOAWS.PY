@@ -24,7 +24,7 @@ else:
     except Exception as e:
         print(f'Erro ao criar o bucket: {e}')
 
-# Faz upload de um arquivo (substitua pelo caminho correto)
+# Faz upload de um arquivo 
 file_path = 'C:/Users/nicol/OneDrive/Desktop/aws/arquivo.txt'  # Ajuste o caminho e o nome do arquivo
 try:
     s3.upload_file(file_path, bucket_name, 'arquivo.txt')
